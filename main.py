@@ -2,7 +2,7 @@ import sys
 import glob
 import time
 import os
-
+ 
 fromPath = sys.argv[1]
 toPath = sys.argv[2]
 sleepTime = float(sys.argv[3])
