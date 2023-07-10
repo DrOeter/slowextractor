@@ -12,11 +12,11 @@ fromList = glob.glob(fromPath + '/*')
 
 with open( 'checklist.txt' , 'r+') as file:
     checkList = file.readlines()
-    try:        
-        for item in checkList:
+    for item in checkList:
+        try:        
             fromList.remove(item[:-1])
-    except:
-        pass
+        except:
+            pass
 
     for fromfilePath in fromList:
         tofilePath = toPath + fromfilePath[fromfilePath.rfind('/'):]
